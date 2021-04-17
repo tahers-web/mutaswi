@@ -3,43 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <title>Mutaswi</title>
-  <style media="screen" type="text/css">
-    #logo-img {
-      margin: 10px 250px 10px 35%;
-      width: 300px;
-    }
-    .navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
-.img-width{
-  width: 100%;
-  height:700px !important;
-
-}
-.carousel-inner{
-  align-items: center;
-}
-.nav{
-     z-index: 999999; //Add this
-}
-
+    <link rel="stylesheet" href="assets/logincss.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme20.css">
   </style>
 </head>
 
 <body>
-
   <div class="">
-    <img src="assets/logo-png.png" class="img-fluid hover-shadow" alt="" id="logo-img" />
-    This is example how it will be
+    <a href="http://127.0.0.1:5000/"><img src="assets/chatbot.png"  alt="" id="chatbot" width=100px height=100px></a>
+
   </div>
 
-  <ul class="nav nav-tabs navbar-center">
-    <li class="nav-item ">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <div class="">
+    <a href=#logo-img><img src="assets/logo-png.png" class="img-fluid hover-shadow" alt="" id="logo-img"/></a>
+
+  </div>
+
+  <ul class="nav nav-tabs navbar mt-5">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#logo-img">Home</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">E-Service</a>
@@ -54,13 +41,79 @@
       </ul>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">About Us</a>
+      <a class="nav-link" href="#accordionExample">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Law & legislation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Careers</a>
     </li>
     <li class="nav-item">
       <a class="nav-link " href="#" tabindex="-1" aria-disabled="False">Contact Us</a>
     </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Login
+  </button>
+    </li>
   </ul>
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...<div class="form-body without-side">
+                 <!-- <div class="website-logo">
+                     <a href="index.html">
+                         <div class="logo">
+                             <img class="logo-size" src="/assets/logo-png.png" alt="">
+                         </div>
+                     </a>
+                 </div> -->
+                 <div class="row">
+                     <div class="img-holder">
+                         <div class="bg"></div>
+                         <div class="info-holder">
+                             <img src="images/graphic3.svg" alt="">
+                         </div>
+                     </div>
+                     <div class="form-holder">
+                         <div class="form-content">
+                             <div class="form-items">
+                                 <h3>Login to account</h3>
+                                 <p>Access to the Mutasawi, Where everyone is equal.</p>
+                                 <form>
+                                     <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>
+                                     <input class="form-control" type="password" name="password" placeholder="Password" required>
+                                     <div class="form-button">
+                                         <button id="submit" type="submit" class="ibtn">Login</button> <a href="forget20.html">Forget password?</a>
+                                     </div>
+                                 </form>
+                                 <div class="other-links">
+                                     <div class="text">Or login with</div>
+                                     <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><a href="#"><i class="fab fa-google"></i>Google</a><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a>
+                                 </div>
+                                 <div class="page-links">
+                                     <a href="register.html">Register new account</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <!----------------->
   <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,22 +131,111 @@
         <img src="assets/silde-3.jpg" class="d-block img-width " alt="...">
       </div>
     </div>
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> -->
   </div>
-<script type="text/javascript">
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          OUR SERVICES
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim augue, maximus in erat eget, lacinia sagittis libero. Donec turpis nulla, faucibus non dapibus eu, scelerisque vitae risus. Aliquam vitae cursus ante. Quisque molestie tortor quam, vitae eleifend quam imperdiet eget. Donec dignissim id risus at vestibulum. Sed consectetur euismod sapien, facilisis blandit massa porttitor sit amet. Sed ac dolor maximus, iaculis leo in, pellentesque ex. Maecenas a nisl accumsan, malesuada justo non, vulputate lorem. Vivamus tincidunt a risus at fringilla. In lectus justo, aliquet non vulputate vitae, ultrices a libero. Sed porta velit eu dictum ornare. Suspendisse potenti.
+
+Suspendisse nec tortor vel magna vehicula consectetur ut ac enim. Aliquam a velit finibus erat tempor maximus eu ut nisi. Fusce id luctus diam. Etiam facilisis sodales dolor, eget gravida odio rutrum vel. Donec aliquam id velit non pharetra. Duis elit risus, aliquet in risus et, dictum feugiat mauris. Proin arcu arcu, finibus a est id, egestas pretium tortor.
+
+Etiam scelerisque, arcu non tempus varius, mauris eros ornare felis, sit amet convallis nisi lorem ac nulla. Quisque eleifend tellus ut nisi venenatis elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum elit id velit laoreet tempus. Donec in lorem eu ex convallis iaculis vel in nibh. Proin fringilla, felis vitae ullamcorper iaculis, tellus ligula scelerisque enim, ut dictum velit velit vitae justo. Maecenas quis nibh ut felis laoreet efficitur. Cras bibendum volutpat urna, vitae convallis dui efficitur nec. Nam elementum dapibus tempor. Proin eget urna eget ex volutpat aliquam at ut enim.
+
+Quisque aliquam purus eget lacus ultrices, vitae feugiat massa rhoncus. Fusce vitae elit ut augue laoreet mattis vitae non tortor. Duis at facilisis dolor, quis vestibulum libero. Aliquam erat volutpat. Quisque blandit justo eu metus molestie feugiat. Proin laoreet purus vitae quam pellentesque, ac aliquam turpis iaculis. Fusce ac sapien orci. Sed interdum erat turpis, vel scelerisque neque ultricies pellentesque. Etiam diam erat, mattis id blandit et, lacinia non sem. Donec eget risus congue, maximus dolor lacinia, tincidunt urna. Integer non placerat felis. Duis tincidunt pretium orci et egestas. Donec interdum porta interdum.
+
+Pellentesque molestie turpis nisl. Integer sed bibendum magna. Nunc ut tortor mattis lectus vulputate dignissim non id neque. Quisque accumsan est quis ligula aliquam, ut pretium est tempor. Sed sollicitudin facilisis blandit. Mauris at velit ante. Maecenas vehicula justo dolor. Nulla quis bibendum ligula. Curabitur metus quam, scelerisque sit amet laoreet a, auctor ac nulla. Cras molestie, leo eget vestibulum fermentum, justo quam accumsan purus, non luctus augue risus non ante. Sed sodales non lacus eget pretium. Donec fermentum odio metus, id auctor mauris auctor at. Fusce eu ultrices metus. Cras fermentum ornare lorem, et vulputate dui maximus vel.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim augue, maximus in erat eget, lacinia sagittis libero. Donec turpis nulla, faucibus non dapibus eu, scelerisque vitae risus. Aliquam vitae cursus ante. Quisque molestie tortor quam, vitae eleifend quam imperdiet eget. Donec dignissim id risus at vestibulum. Sed consectetur euismod sapien, facilisis blandit massa porttitor sit amet. Sed ac dolor maximus, iaculis leo in, pellentesque ex. Maecenas a nisl accumsan, malesuada justo non, vulputate lorem. Vivamus tincidunt a risus at fringilla. In lectus justo, aliquet non vulputate vitae, ultrices a libero. Sed porta velit eu dictum ornare. Suspendisse potenti.
+
+  Suspendisse nec tortor vel magna vehicula consectetur ut ac enim. Aliquam a velit finibus erat tempor maximus eu ut nisi. Fusce id luctus diam. Etiam facilisis sodales dolor, eget gravida odio rutrum vel. Donec aliquam id velit non pharetra. Duis elit risus, aliquet in risus et, dictum feugiat mauris. Proin arcu arcu, finibus a est id, egestas pretium tortor.
+
+  Etiam scelerisque, arcu non tempus varius, mauris eros ornare felis, sit amet convallis nisi lorem ac nulla. Quisque eleifend tellus ut nisi venenatis elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum elit id velit laoreet tempus. Donec in lorem eu ex convallis iaculis vel in nibh. Proin fringilla, felis vitae ullamcorper iaculis, tellus ligula scelerisque enim, ut dictum velit velit vitae justo. Maecenas quis nibh ut felis laoreet efficitur. Cras bibendum volutpat urna, vitae convallis dui efficitur nec. Nam elementum dapibus tempor. Proin eget urna eget ex volutpat aliquam at ut enim.
+
+  Quisque aliquam purus eget lacus ultrices, vitae feugiat massa rhoncus. Fusce vitae elit ut augue laoreet mattis vitae non tortor. Duis at facilisis dolor, quis vestibulum libero. Aliquam erat volutpat. Quisque blandit justo eu metus molestie feugiat. Proin laoreet purus vitae quam pellentesque, ac aliquam turpis iaculis. Fusce ac sapien orci. Sed interdum erat turpis, vel scelerisque neque ultricies pellentesque. Etiam diam erat, mattis id blandit et, lacinia non sem. Donec eget risus congue, maximus dolor lacinia, tincidunt urna. Integer non placerat felis. Duis tincidunt pretium orci et egestas. Donec interdum porta interdum.
+
+  Pellentesque molestie turpis nisl. Integer sed bibendum magna. Nunc ut tortor mattis lectus vulputate dignissim non id neque. Quisque accumsan est quis ligula aliquam, ut pretium est tempor. Sed sollicitudin facilisis blandit. Mauris at velit ante. Maecenas vehicula justo dolor. Nulla quis bibendum ligula. Curabitur metus quam, scelerisque sit amet laoreet a, auctor ac nulla. Cras molestie, leo eget vestibulum fermentum, justo quam accumsan purus, non luctus augue risus non ante. Sed sodales non lacus eget pretium. Donec fermentum odio metus, id auctor mauris auctor at. Fusce eu ultrices metus. Cras fermentum ornare lorem, et vulputate dui maximus vel.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim augue, maximus in erat eget, lacinia sagittis libero. Donec turpis nulla, faucibus non dapibus eu, scelerisque vitae risus. Aliquam vitae cursus ante. Quisque molestie tortor quam, vitae eleifend quam imperdiet eget. Donec dignissim id risus at vestibulum. Sed consectetur euismod sapien, facilisis blandit massa porttitor sit amet. Sed ac dolor maximus, iaculis leo in, pellentesque ex. Maecenas a nisl accumsan, malesuada justo non, vulputate lorem. Vivamus tincidunt a risus at fringilla. In lectus justo, aliquet non vulputate vitae, ultrices a libero. Sed porta velit eu dictum ornare. Suspendisse potenti.
+
+Suspendisse nec tortor vel magna vehicula consectetur ut ac enim. Aliquam a velit finibus erat tempor maximus eu ut nisi. Fusce id luctus diam. Etiam facilisis sodales dolor, eget gravida odio rutrum vel. Donec aliquam id velit non pharetra. Duis elit risus, aliquet in risus et, dictum feugiat mauris. Proin arcu arcu, finibus a est id, egestas pretium tortor.
+
+Etiam scelerisque, arcu non tempus varius, mauris eros ornare felis, sit amet convallis nisi lorem ac nulla. Quisque eleifend tellus ut nisi venenatis elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum elit id velit laoreet tempus. Donec in lorem eu ex convallis iaculis vel in nibh. Proin fringilla, felis vitae ullamcorper iaculis, tellus ligula scelerisque enim, ut dictum velit velit vitae justo. Maecenas quis nibh ut felis laoreet efficitur. Cras bibendum volutpat urna, vitae convallis dui efficitur nec. Nam elementum dapibus tempor. Proin eget urna eget ex volutpat aliquam at ut enim.
+
+Quisque aliquam purus eget lacus ultrices, vitae feugiat massa rhoncus. Fusce vitae elit ut augue laoreet mattis vitae non tortor. Duis at facilisis dolor, quis vestibulum libero. Aliquam erat volutpat. Quisque blandit justo eu metus molestie feugiat. Proin laoreet purus vitae quam pellentesque, ac aliquam turpis iaculis. Fusce ac sapien orci. Sed interdum erat turpis, vel scelerisque neque ultricies pellentesque. Etiam diam erat, mattis id blandit et, lacinia non sem. Donec eget risus congue, maximus dolor lacinia, tincidunt urna. Integer non placerat felis. Duis tincidunt pretium orci et egestas. Donec interdum porta interdum.
+
+Pellentesque molestie turpis nisl. Integer sed bibendum magna. Nunc ut tortor mattis lectus vulputate dignissim non id neque. Quisque accumsan est quis ligula aliquam, ut pretium est tempor. Sed sollicitudin facilisis blandit. Mauris at velit ante. Maecenas vehicula justo dolor. Nulla quis bibendum ligula. Curabitur metus quam, scelerisque sit amet laoreet a, auctor ac nulla. Cras molestie, leo eget vestibulum fermentum, justo quam accumsan purus, non luctus augue risus non ante. Sed sodales non lacus eget pretium. Donec fermentum odio metus, id auctor mauris auctor at. Fusce eu ultrices metus. Cras fermentum ornare lorem, et vulputate dui maximus vel.
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- <script type="text/javascript">
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel, {
   interval: 2000,
   wrap: false
 })
-</script>
+</script> -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="assets/img-card1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Insurance</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="assets/img-card2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Work Contract</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="assets/img-card3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Other Services</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+      <div class="container">
+        <span class="text-muted">Copywrite By Mutasaw= @2021.</span>
+      </div>
+    </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
