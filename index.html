@@ -41,8 +41,8 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">E-Service</a>
       <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Work-Contract</a></li>
         <li><a class="dropdown-item" href="#">Insurance</a></li>
-        <li><a class="dropdown-item" href="#">Put Request</a></li>
         <li><a class="dropdown-item" href="#">Other Services</a></li>
         <li>
           <hr class="dropdown-divider">
@@ -54,13 +54,13 @@
       <a class="nav-link" href="#accordionExample">About Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Law & legislation</a>
+      <button type="button" class="btn btn-primary" id="buttonlaw" data-toggle="modal" data-target="#exampleModal">
+        Law & Legislation
+      </button>
     </li>
+
     <li class="nav-item">
-      <a class="nav-link" href="#">Careers</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link " href="#" tabindex="-1" aria-disabled="False">Contact Us</a>
+      <a class="nav-link " href="#footi" tabindex="-1" aria-disabled="False">Contact Us</a>
     </li>
     <li class="nav-item">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -68,6 +68,77 @@
       </button>
     </li>
   </ul>
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-lg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Law & Legislation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1>Recruitment</h1>
+<p>Recruitment must be fair in business and provide all applicants with a fair chance at getting a job role. New employees must be provided with a contract of employment within two months of starting a job role. An employment contract includes details such as:
+</p>
+<ul>
+  <li>payment</li>
+  <li>holidays</li>
+  <li>duties</li>
+  <li>responsibilities</li>
+  <li>notice period</li>
+  <li>any additional terms of employment</li>
+</ul>
+<p>
+Pay
+Under the National Minimum Wage Act (1998), all businesses must pay their staff a minimum hourly rate. There is no exemption for small employers or discounts for geographical areas. The aim is to increase the incomes of the low paid. The rates are set each year by the government.
+
+For people aged 16 to 24, this is called the national minimum wage. It varies according to different categories (under 18, over 18, over 21 and apprenticeships).
+
+For people aged 25 or over, it is called the national living wage.
+</p>
+<p>
+<h1>Discrimination</h1>
+The Equality Act (2010) is designed to prevent discrimination on a number of grounds. These grounds are called ‘protected characteristics’. The Equality Act (2010) makes it illegal for a business to pay people different rates of pay if they are doing the same job or similar jobs. This means, for example, that a business cannot pay a male member of staff more than a female member of staff if they are employed in the same role.
+
+Protected characteristics include age, disability, gender, marital status, pregnancy and maternity, sexual orientation, race and religion.
+
+Symbols of Protected Characteristics: Age, disability, gender, marital status, pregnancy and maternity, sexual orientation, race, religion
+Working conditions
+Working conditions need to be safe and fair for all employees. This relates to the physical working environment, health and safety policies, protecting employees from unfair dismissal and the contractual conditions employees have. Working environment could relate to employees being provided with desks at the right height, adjustable chairs and the correct levels of lighting.
+</p>
+<p>
+<h1>Health and Safety policies</h1>
+ are put in place to conform with the Health and Safety at Work Act (1974). This outlines the responsibilities that both employers and employees have in keeping the working environment safe. This includes areas such as:
+
+staff training
+safety equipment, including tools and clothing where appropriate
+drinking water
+toilets and suitable washing facilities
+first aid equipment
+Protecting employees from unfair dismissal considers the reasons for employees leaving a business. An employee must only lose their job for a good reason, or because they decide to leave a business. An employee can be terminated from their role for severe or repeated misconduct. An employee could also be made redundant if a business needs to cut costs or a role no longer exists. If an employee is dismissed unfairly, they may take a business to court.
+
+Contractual conditions considers, for example, protecting employees from unfair dismissal. This occurs where an employee is either forced out of the business or quits due to an issue caused by the business.
+
+Employers must follow the Working Time Regulations (1998, amended 2003), these place limits on the number of hours that employers can expect staff to work. They also specify the breaks employees are entitled to. The regulations ensure that staff:
+
+can only be asked to work, on average, up to 48 hours per week
+are entitled to a minimum of 5.6 weeks’ holidays per year
+have a minimum of one day off each week
+have at least 11 consecutive hours off in every 24-hour period
+take a 20-minute break when working more than six hours
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -103,7 +174,7 @@
                       <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>
                       <input class="form-control" type="password" name="password" placeholder="Password" required>
                       <div class="form-button">
-                        <button id="submit" type="submit" class="ibtn">Login</button> <a href="forget20.html">Forget password?</a>
+                        <a href="dashboard.html"><p id="submit" type="submit" class="ibtn">Login</p></a>
                       </div>
                     </form>
                     <div class="other-links">
@@ -152,9 +223,9 @@
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          As the technologies in the world expands to cover grounds that had never been touched before, a gap is always created between those who can afford to keep up and those who cannot. Mutasaw= group today is focusing on bringing those who can
-          and those who cannot keep up onto a platform that does not differentiate or discriminate between either. Equal opportunities for all mean equal services for those who seek it out. From insurance to banking services and financial advice to
-          managing your work contracts, our staff will have you covered through your journey.
+          We, at Mutasawi, offer services and facilities for creation of Work Contracts which can be either standardized or designed to cater to your special needs, therefore, bringing employees closer to their employers. Apart from offering both Limited and Unlimited Work Contracts that follow individual government designs, Specialized Work Contracts can also be generated to suit your special needs and maintain throughout the future.
+          Addressing the life cycle of a contract, our team will accompany you from the creation of a contract, follow through its management and maintenance which will allow you to update whenever and wherever necessary and finally when a contract either reaches it expiration or will be terminated as per requirement.
+          While templates are available for structuring job contracts, specialized contracts can be constructed with assistant from Legal Partners to suit your personal requirement and make your business efficient.*
         </div>
       </div>
     </div>
@@ -195,24 +266,9 @@
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim augue, maximus in erat eget, lacinia sagittis libero. Donec turpis nulla, faucibus non dapibus eu, scelerisque vitae risus. Aliquam vitae cursus ante. Quisque molestie tortor
-          quam, vitae eleifend quam imperdiet eget. Donec dignissim id risus at vestibulum. Sed consectetur euismod sapien, facilisis blandit massa porttitor sit amet. Sed ac dolor maximus, iaculis leo in, pellentesque ex. Maecenas a nisl accumsan,
-          malesuada justo non, vulputate lorem. Vivamus tincidunt a risus at fringilla. In lectus justo, aliquet non vulputate vitae, ultrices a libero. Sed porta velit eu dictum ornare. Suspendisse potenti.
-
-          Suspendisse nec tortor vel magna vehicula consectetur ut ac enim. Aliquam a velit finibus erat tempor maximus eu ut nisi. Fusce id luctus diam. Etiam facilisis sodales dolor, eget gravida odio rutrum vel. Donec aliquam id velit non
-          pharetra. Duis elit risus, aliquet in risus et, dictum feugiat mauris. Proin arcu arcu, finibus a est id, egestas pretium tortor.
-
-          Etiam scelerisque, arcu non tempus varius, mauris eros ornare felis, sit amet convallis nisi lorem ac nulla. Quisque eleifend tellus ut nisi venenatis elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum elit
-          id velit laoreet tempus. Donec in lorem eu ex convallis iaculis vel in nibh. Proin fringilla, felis vitae ullamcorper iaculis, tellus ligula scelerisque enim, ut dictum velit velit vitae justo. Maecenas quis nibh ut felis laoreet efficitur.
-          Cras bibendum volutpat urna, vitae convallis dui efficitur nec. Nam elementum dapibus tempor. Proin eget urna eget ex volutpat aliquam at ut enim.
-
-          Quisque aliquam purus eget lacus ultrices, vitae feugiat massa rhoncus. Fusce vitae elit ut augue laoreet mattis vitae non tortor. Duis at facilisis dolor, quis vestibulum libero. Aliquam erat volutpat. Quisque blandit justo eu metus
-          molestie feugiat. Proin laoreet purus vitae quam pellentesque, ac aliquam turpis iaculis. Fusce ac sapien orci. Sed interdum erat turpis, vel scelerisque neque ultricies pellentesque. Etiam diam erat, mattis id blandit et, lacinia non sem.
-          Donec eget risus congue, maximus dolor lacinia, tincidunt urna. Integer non placerat felis. Duis tincidunt pretium orci et egestas. Donec interdum porta interdum.
-
-          Pellentesque molestie turpis nisl. Integer sed bibendum magna. Nunc ut tortor mattis lectus vulputate dignissim non id neque. Quisque accumsan est quis ligula aliquam, ut pretium est tempor. Sed sollicitudin facilisis blandit. Mauris at
-          velit ante. Maecenas vehicula justo dolor. Nulla quis bibendum ligula. Curabitur metus quam, scelerisque sit amet laoreet a, auctor ac nulla. Cras molestie, leo eget vestibulum fermentum, justo quam accumsan purus, non luctus augue risus
-          non ante. Sed sodales non lacus eget pretium. Donec fermentum odio metus, id auctor mauris auctor at. Fusce eu ultrices metus. Cras fermentum ornare lorem, et vulputate dui maximus vel.
+          As the technologies in the world expands to cover grounds that had never been touched before, a gap is always created between those who can afford to keep up and those who cannot. Mutasaw= group today is focusing on bringing those who can
+          and those who cannot keep up onto a platform that does not differentiate or discriminate between either. Equal opportunities for all mean equal services for those who seek it out. From insurance to banking services and financial advice to
+          managing your work contracts, our staff will have you covered through your journey.
         </div>
       </div>
     </div>
@@ -253,11 +309,78 @@ var carousel = new bootstrap.Carousel(myCarousel, {
       </div>
     </div>
   </div>
+<br />
+<br>
+<br>
+<br>
+<br>
+
+  <div class="container" id="footi">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="footer-widget">
+          <h3>Stay in touch</h3>
+          <div class="footer-widget-content">
+            <a href="tel:0121234" class="contact-link">(123) 456-789</a>
+            <div class="footer-social">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+      <div class="footer-widget">
+        <h3>Opening Hour</h3>
+        <div class="footer-widget-content">
+        <div class="open-time ">
+          <ul class="opening-time">
+            <li><span><i class="fa fa-times"></i></span><p class="clock-time"><strong>Friday:</strong> closed</p>
+             </li>
+            <li><span><i class="fa fa-check"></i></span><p><strong>Sun to Wed :</strong> 8am - 12am</p></li>
+            <li><span><i class="fa fa-check"></i></span><p><strong>Thrusday :</strong> 7am - 1am</p></li>
+            <li><span><i class="fa fa-check"></i></span><p><strong>Sat :</strong> 12pm-12am</p></li>
+          </ul>
+           </div>
+        </div>
+        </div></div>
+
+      <div class="col-sm-3">
+      <div class="footer-widget">
+        <h3>Partners</h3>
+        <div class="footer-widget-content">
+          <div class="images-gellary">
+            <ul>
+              <li><a href="#"><img src="assets/part1.png" alt="Instagram 01" width=200px></a></li>
+              <li><a href="#"><img src="assets/part2.png" alt="Instagram 02" width=200px></a></li>
+              <li><a href="#"><img src="assets/part3.png" alt="Instagram 03" width=200px></a></li>
+              <li><a href="#"><img src="assets/part4.png" alt="Instagram 04" width=200px></a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br><br>
+
   <footer class="footer">
     <div class="container">
       <span class="text-muted">Copyright protected By Mutasaw= © 2021.</span>
     </div>
+
   </footer>
+  <script type="text/javascript">
+    window.onload(#home);
+    }
+  </script>
+
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
