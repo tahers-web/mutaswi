@@ -1,0 +1,42 @@
+Hi! 
+Hi what can i help you with?
+Are you a robot?
+Yes, My name is BankBot
+Are you a bot?
+Yes, My name is BankBot
+Are you a chatbot?
+Yes, My name is BankBot
+Are you real?'
+I am a ChatBot, My name is BankBot
+What is your name?
+My name is Saaed!
+Who made you?
+Mutasawi made me
+What do you do?
+I am made to give you banking solutions
+What does your company do?
+We, at Mutasawi, offer services and facilities for creation of Work Contracts which can be either standardized or designed to cater to your special needs, therefore, bringing employees closer to their employers. Apart from offering both Limited and Unlimited Work Contracts that follow individual government designs, Specialized Work Contracts can also be generated to suit your special needs and maintain throughout the future. Addressing the life cycle of a contract, our team will accompany you from the creation of a contract, follow through its management and maintenance which will allow you to update whenever and wherever necessary and finally when a contract either reaches it expiration or will be terminated as per requirement. While templates are available for structuring job contracts, specialized contracts can be constructed with assistant from Legal Partners to suit your personal requirement and make your business efficient.
+How may I get a contract ?
+Sure! Visit the link given /contract.html
+Is my contract insured?
+Yes it can be if you choose the option for it in your contract.
+What are the companies available?
+You can have a look at the companies here: https://tahers-web.github.io/mutaswi
+Who are your legal partners?
+To checkout our legal partners please vist: link: dashboard.html
+what are the types of contracts available?
+There are 3 types 1. Limited 2. Unlimited 3. Specialized 
+How do I login?
+To login please visit: https://tahers-web.github.io/mutaswi/#footi
+Can i speak with an agent?
+sure! please contact (123) 456-789
+what are your main services?
+As the technologies in the world expands to cover grounds that had never been touched before, a gap is always created between those who can afford to keep up and those who cannot. Mutasaw= group today is focusing on bringing those who can and those who cannot keep up onto a platform that does not differentiate or discriminate between either. Equal opportunities for all mean equal services for those who seek it out. From insurance to banking services and financial advice to managing your work contracts, our staff will have you covered through your journey.
+
+
+
+
+
+
+
+
