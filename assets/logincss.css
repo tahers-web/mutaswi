@@ -3,6 +3,9 @@
   background-color: orange !important;
   color: black;
 }
+.modal{
+  z-index:999999 !important;
+}
 #logo-img {
   margin-right: 05%;
   padding-bottom: 10px;
