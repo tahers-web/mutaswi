@@ -24,9 +24,21 @@
 </head>
 
 <body>
+<script type="text/javascript">
+$(document).ready(function(){
 
+$('#smartwizard').smartWizard({
+  selected: 0,
+  theme: 'arrows',
+  autoAdjustHeight:true,
+  transitionEffect:'fade',
+  showStepURLhash: false,
+});
+});
+
+</script>
   <div class="">
-    <a href="http://127.0.0.1:5000/"><img src="assets/chatbot.png" alt="" id="chatbot" width=100px height=100px></a>
+    <a onclick="window.open('http://127.0.0.1:5000','name','width=600,height=400')"><img src="assets/chatbot.png" alt="" id="chatbot" width=100px height=100px></a>
   </div>
 
   <div class="">
@@ -41,7 +53,8 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">E-Service</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Work-Contract</a></li>
+        <li>    <div class="row d-flex justify-content-center mt-200"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal24"> Work Contract </button> </div> <!-- Modal -->
+</li>
         <li><a class="dropdown-item" href="#">Insurance</a></li>
         <li><a class="dropdown-item" href="#">Other Services</a></li>
         <li>
@@ -73,7 +86,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content modal-lg">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Law & Legislation</h5>
@@ -232,29 +245,16 @@ take a 20-minute break when working more than six hours
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Predictive Anaylsis on Job Stability
+          Descriptive Anaylsis on Job Stability
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim augue, maximus in erat eget, lacinia sagittis libero. Donec turpis nulla, faucibus non dapibus eu, scelerisque vitae risus. Aliquam vitae cursus ante. Quisque molestie tortor
-          quam, vitae eleifend quam imperdiet eget. Donec dignissim id risus at vestibulum. Sed consectetur euismod sapien, facilisis blandit massa porttitor sit amet. Sed ac dolor maximus, iaculis leo in, pellentesque ex. Maecenas a nisl accumsan,
-          malesuada justo non, vulputate lorem. Vivamus tincidunt a risus at fringilla. In lectus justo, aliquet non vulputate vitae, ultrices a libero. Sed porta velit eu dictum ornare. Suspendisse potenti.
+          Employees are often left desperate when it comes to finding jobs and more when it comes to making the right decision not only regarding their contract but also about the company they will be joining. Decisions made in haste and fueled by lack of facts and information leads to error in judgement that can plague ones’ life at work. Worried about the same happening to you? Worry not, Mutasaw Group has you covered.
 
-          Suspendisse nec tortor vel magna vehicula consectetur ut ac enim. Aliquam a velit finibus erat tempor maximus eu ut nisi. Fusce id luctus diam. Etiam facilisis sodales dolor, eget gravida odio rutrum vel. Donec aliquam id velit non
-          pharetra. Duis elit risus, aliquet in risus et, dictum feugiat mauris. Proin arcu arcu, finibus a est id, egestas pretium tortor.
+    With every employee that utilizes our services, we prepare a record for not only the employee but also their employer, thereby creating a profile where we can record information about any changes made to their contract, be it early cancellation or any type of changes that can affect a contract’s life span and terms. Depending upon the variation in such contracts, the profile of each employer will be updated and made available to the employees who seek such information to make the best decision for their career.
 
-          Etiam scelerisque, arcu non tempus varius, mauris eros ornare felis, sit amet convallis nisi lorem ac nulla. Quisque eleifend tellus ut nisi venenatis elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum elit
-          id velit laoreet tempus. Donec in lorem eu ex convallis iaculis vel in nibh. Proin fringilla, felis vitae ullamcorper iaculis, tellus ligula scelerisque enim, ut dictum velit velit vitae justo. Maecenas quis nibh ut felis laoreet efficitur.
-          Cras bibendum volutpat urna, vitae convallis dui efficitur nec. Nam elementum dapibus tempor. Proin eget urna eget ex volutpat aliquam at ut enim.
-
-          Quisque aliquam purus eget lacus ultrices, vitae feugiat massa rhoncus. Fusce vitae elit ut augue laoreet mattis vitae non tortor. Duis at facilisis dolor, quis vestibulum libero. Aliquam erat volutpat. Quisque blandit justo eu metus
-          molestie feugiat. Proin laoreet purus vitae quam pellentesque, ac aliquam turpis iaculis. Fusce ac sapien orci. Sed interdum erat turpis, vel scelerisque neque ultricies pellentesque. Etiam diam erat, mattis id blandit et, lacinia non sem.
-          Donec eget risus congue, maximus dolor lacinia, tincidunt urna. Integer non placerat felis. Duis tincidunt pretium orci et egestas. Donec interdum porta interdum.
-
-          Pellentesque molestie turpis nisl. Integer sed bibendum magna. Nunc ut tortor mattis lectus vulputate dignissim non id neque. Quisque accumsan est quis ligula aliquam, ut pretium est tempor. Sed sollicitudin facilisis blandit. Mauris at
-          velit ante. Maecenas vehicula justo dolor. Nulla quis bibendum ligula. Curabitur metus quam, scelerisque sit amet laoreet a, auctor ac nulla. Cras molestie, leo eget vestibulum fermentum, justo quam accumsan purus, non luctus augue risus
-          non ante. Sed sodales non lacus eget pretium. Donec fermentum odio metus, id auctor mauris auctor at. Fusce eu ultrices metus. Cras fermentum ornare lorem, et vulputate dui maximus vel.
+    Furthermore, a descriptive analysis will be performed over each and every company’s profile to help assess the reason behind the changes made in contracts, irrespective of the fact if they are good or bad. Such analytics has been made available using Python, specifically Pandas library.
         </div>
       </div>
     </div>
@@ -269,6 +269,8 @@ take a 20-minute break when working more than six hours
           As the technologies in the world expands to cover grounds that had never been touched before, a gap is always created between those who can afford to keep up and those who cannot. Mutasaw= group today is focusing on bringing those who can
           and those who cannot keep up onto a platform that does not differentiate or discriminate between either. Equal opportunities for all mean equal services for those who seek it out. From insurance to banking services and financial advice to
           managing your work contracts, our staff will have you covered through your journey.
+
+          <img src="" alt="">
         </div>
       </div>
     </div>
@@ -369,6 +371,103 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   </div>
 <br><br><br><br>
 
+<div class="container">
+    <div class="modal fade" id="exampleModal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Work Contract</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div id="smartwizard">
+                        <div class="mt-4">
+                            <div id="step-2">
+                                <div class="row">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Name" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Email" required> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Password" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Repeat password" required> </div>
+                                </div>
+                            </div>
+                            <div id="step-2">
+                                <div class="row">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Passport Number" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Passport Expiry" required> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Profession" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Country Residence" required> </div>
+                                </div>
+                            </div>
+                            <div id="step-2">
+                                <div class="row">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Address" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="City" required> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="State" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Country" required> </div>
+                                </div>
+                            </div>
+                            <div id="step-2" class="">
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Company Name" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Company Number" required> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Minimum Salary" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Company Perks" required> </div>
+                                </div>
+                                </div>
+                                <div id="step-2" class="">
+                                    <div class="row mt-3">
+                                        <div class="col-md-6"> <input type="text" class="form-control" placeholder="Company address" required> </div>
+                                        <div class="col-md-6"> <input type="text" class="form-control" placeholder="Contract Period" required> </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6"> <input type="text" class="form-control" placeholder="Contract Start Date" required> </div>
+                                        <div class="col-md-6"> <input type="text" class="form-control" placeholder="Probationary Period" required> </div>
+                                    </div>
+                                  </div>
+                                  <div id="step-2" class="">
+                                      <div class="row mt-3 mr-2 ml-2 ">
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected>Contract Type</option>
+                                          <option value="1">Limited</option>
+                                          <option value="2">Unlimited</option>
+                                          <option value="3">Specialized</option>
+                                        </select>
+
+                                        <select class="form-select mt-2" aria-label="Default select example">
+                                          <option selected> Insurance </option>
+                                          <option value="1"> Yes, Needed </option>
+                                          <option value="2"> No, Not Needed </option>
+                                        </select>
+                                      </div>
+                                      <div class="row mt-3">
+                                          <div class="col-md-6"> <input type="text" class="form-control" placeholder="Contract Signature" required> </div>
+                                          <div class="col-md-6"> <input type="text" class="form-control" placeholder="Please Type 'Agree' for agreeing to our T&C" required> </div>
+                                      </div>
+                                    </dive>
+
+                                    <div style="text-align:center;">
+
+                                      <input class="btn btn-primary btn-centered" type="submit" value="Submit"  style="margin:10px">
+
+                                    </div>
+
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
   <footer class="footer">
     <div class="container">
       <span class="text-muted">Copyright protected By Mutasaw= © 2021.</span>
@@ -376,8 +475,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
   </footer>
   <script type="text/javascript">
-    window.onload(#home);
-    }
+
   </script>
 
   </script>
