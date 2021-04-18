@@ -31,6 +31,11 @@ position:fixed;
 bottom: 30px;
 right: 40px;
 z-index:999999 !important;
+
+}
+#chatbot:hover{
+  transition-delay: 0.1s;
+  transform: translateY(-10px);
 }
 .nav-item{
 background-color:orange !important;
@@ -49,6 +54,6 @@ background-color: #f5f5f5;
 footer{
 display: block;
 }
-.accordion{
+/* .accordion{
 background-color:brown;
-}
+} */

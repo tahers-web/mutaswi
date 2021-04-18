@@ -1,6 +1,6 @@
 
 .form-body {
-    background-color: #fff;
+    background-color: grey;
 }
 
 .website-logo {
@@ -415,11 +415,11 @@
 }
 
 .form-body.without-side .img-holder .info-holder img {
-    display: inline-block;
+    display: block;
 }
 
 .form-body.without-side .form-content .page-links a:after {
-    background-color: rgba(222, 222, 222, 0.7);
+    background-color: rgba(225, 225, 225, 0.4);
 }
 
 .form-body.without-side .form-content .page-links a.active:after {
