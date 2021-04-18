@@ -1,10 +1,14 @@
 /* sign in FORM */
-
+#buttonlaw{
+  background-color: orange !important;
+  color: black;
+}
 #logo-img {
   margin-right: 05%;
   padding-bottom: 10px;
+  padding-top:0px;
   width: 400px;
-  float:left;
+  float: left;
 }
 .navbar-center {
 position: absolute;
@@ -33,15 +37,23 @@ right: 40px;
 z-index:999999 !important;
 
 }
+.container-fluid{
+  width:100%;
+}
+#card123{
+  width:100%;
+}
 #chatbot:hover{
   transition-delay: 0.1s;
   transform: translateY(-10px);
 }
 .nav-item{
 background-color:orange !important;
+color:black;
 }
 .dropdown-item{
 background-color:orange;
+color:black;
 }
 .footer {
 position: fixed;
@@ -57,3 +69,6 @@ display: block;
 /* .accordion{
 background-color:brown;
 } */
+#footi{
+  margin-left: 25%;
+}
