@@ -68,10 +68,33 @@ background-color: #f5f5f5;
 }
 footer{
 display: block;
+width: 100%;
 }
 /* .accordion{
 background-color:brown;
 } */
 #footi{
-  margin-left: 25%;
+
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+.close:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+.modal-lg{
+  width: 900px !important;
+}
+#step-2{
+  margin: 10px;
 }
